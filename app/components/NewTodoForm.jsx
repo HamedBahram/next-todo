@@ -20,7 +20,7 @@ const NewTodoForm = () => {
 
     setIsFetching(true)
 
-    await fetch(`${process.env.SITE_URL}/api/todos`, {
+    await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/todos`, {
       method: 'POST',
       body: JSON.stringify({ title })
     })
