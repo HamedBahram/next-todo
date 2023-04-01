@@ -2,7 +2,8 @@ import { getAllTodos } from '@/lib/mongo/todos'
 import Link from 'next/link'
 import NewTodoForm from '../components/NewTodoForm'
 
-export const revalidate = 0
+export const dynamic = 'force-dynamic'
+// export const revalidate = 0
 
 const Page = async () => {
   const { todos } = await getAllTodos()

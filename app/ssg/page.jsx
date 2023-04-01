@@ -2,6 +2,10 @@ import { getAllTodos } from '@/lib/mongo/todos'
 import Link from 'next/link'
 import NewTodoForm from '../components/NewTodoForm'
 
+// export const dynamic = 'auto'
+// export const dynamic = 'force-static'
+export const dynamic = 'error'
+
 const Page = async () => {
   const { todos } = await getAllTodos()
 
